@@ -1,11 +1,13 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+// import React from "react";
+import ReactDOM from 'react-dom/client';
 
-const element = (
-  <h1 className="heading">
-    <span className="text">Hello {new Date().toLocaleDateString()}</span>
-  </h1>
-);
+function Clock({locale}){
+  return(
+    <h1 className="heading">
+      <span className="text">Hello {new Date().toLocaleDateString(locale)}</span>
+    </h1>
+  )
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render(element);
+ReactDOM.createRoot(document.getElementById('root')).render(<Clock locale="bn-BD"/>);
 
