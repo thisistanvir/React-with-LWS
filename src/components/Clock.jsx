@@ -1,8 +1,10 @@
 import React from "react";
 
+import Button from "./Button";
+
 class Clock extends React.Component{
 
-  state = {date: new Date()}
+  state = {date: new Date(), locale: "bn-BD"}
 
   // call after reload first time
   componentDidMount(){
@@ -21,14 +23,23 @@ class Clock extends React.Component{
     })
   }
 
+  handleClick = (locale) => {
+    this.setState({
+      locale
+    })
+  }
+
+
   render(){
-    const {date} = this.state;
-    const {locale} = this.props;
+    const {date, locale} = this.state;
 
     return(
-      <h1 className="heading">
-        <span className="text">Hello - {date.toLocaleTimeString(locale)}</span>
-      </h1>
+      <div>
+        <h1 className="heading">
+          <span className="text">Hello - {date.toLocaleTimeString(locale)}</span>
+        </h1>
+        <Button change={this.handleClick} locale="en-US">Click Here</Button>
+      </div>
     );
   }
 }
