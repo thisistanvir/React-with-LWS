@@ -9,6 +9,7 @@ export default class Form extends React.Component{
     isAwesome: true,
   }
 
+  
   handleChange = (e) =>{
     if(e.target.type === 'text'){
       this.setState({
