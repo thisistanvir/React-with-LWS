@@ -1,12 +1,9 @@
-import withCounter from "../HOC/withCounter";
 
-const HoverCounter = (props) =>{
+export default function HoverCounter ({theme, count, incrementCount}){
 
-  const {count, increment} = props;
+  const style = "dark" === theme ? {backgroundColor: "#000", color: "#fff"} : null;
 
   return(
-    <h1  onMouseEnter={increment}>Hovered {count} Times</h1>
+    <h1 style={style}  onMouseEnter={incrementCount}> Hovered {count} Times</h1>
   )
 }
-
-export default withCounter(HoverCounter);
