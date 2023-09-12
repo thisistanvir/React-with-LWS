@@ -7,11 +7,24 @@ import ThemeContext from "./contexts/ThemeContext";
 export default class App extends React.Component{
 
   state = {
-    theme: 'dark'
+    theme: 'light',
+    switchTheme: () =>{
+      this.setState(({theme})=>{
+        if('light' === theme){
+          return{
+            theme: 'dark',
+          }
+        }else {
+          return{
+            theme: 'light',
+          }
+        }
+      })
+    }
   }
 
   render(){
-    const {theme} = this.state;
+    
     return (
       <div>
      <Counter>
@@ -20,7 +33,7 @@ export default class App extends React.Component{
         )}
       </Counter>
       
-      <ThemeContext.Provider  value={{theme: theme}} >
+      <ThemeContext.Provider  value={this.state} >
           <Section/>
       </ThemeContext.Provider>
         
