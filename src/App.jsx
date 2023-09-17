@@ -1,12 +1,12 @@
-import ClickCounter from "./components/ClickCounter"
-import HoverCounter from "./components/HoverCounter"
+import Counter from "./components/Counter"
+import Todo from "./components/Todo"
 
 function App() {
 
   return (
     <div>
-      <ClickCounter/>
-      <HoverCounter/>
+      <Todo/>
+      <Counter/>
     </div>
   )
 
