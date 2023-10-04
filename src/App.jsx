@@ -1,11 +1,10 @@
-import Time from "./components/Time"
-
+import GetPost2 from "./components/GetPost2"
 
 function App() {
 
   return (
     <div className="app">
-      <Time/>
+      <GetPost2/>
     </div>
   )
 
