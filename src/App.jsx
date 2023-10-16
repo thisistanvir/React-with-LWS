@@ -1,13 +1,13 @@
-import Logo from "./components/Logo"
+// import css
+import "./assets/css/dark.css"
 
-import "./assets/css/global.css"
+import Tutorial from "./components/Tutorial"
 
 function App() {
 
   return (
     <div className="app">
-      <h1>Learn With Sumit</h1>
-      <Logo/>
+      <Tutorial/>
     </div>
   )
 
