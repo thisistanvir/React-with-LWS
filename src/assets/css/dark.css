@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
+} */
 
 /* .wrapper {
 	display: flex;
@@ -16,7 +16,7 @@
 	height: 100vh;
 } */
 
-.card {
+/* .card {
 	position: relative;
 	background: #1e1e1e;
 	height: 350px;
@@ -24,35 +24,35 @@
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-}
+} */
 
-img {
+/* img {
 	position: absolute;
 	top: 30px;
 	right: -20px;
 	z-index: 0;
-}
+} */
 
-.content {
+/* .content {
 	width: 215px;
 	position: absolute;
 	left: 20px;
 	z-index: 3;
-}
+} */
 
-h1 {
+/* h1 {
 	color: #fff;
-}
+} */
 
-p {
+/* p {
 	width: 280px;
 	font-size: 13px;
 	line-height: 1.4;
 	color: #aaa;
 	margin: 20px 0;
-}
+} */
 
-.tag {
+/* .tag {
 	display: inline-block;
 	color: #fff;
 	background: #4361ee;
@@ -60,14 +60,14 @@ p {
 	padding: 5px 10px;
 	border-radius: 50px;
 	font-size: 0.7em;
-}
-.buttons {
+} */
+/* .buttons {
 	width: fit-content;
 	height: fit-content;
 	margin-top: 10px;
-}
+} */
 
-.buttons a {
+/* .buttons a {
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
@@ -77,9 +77,9 @@ p {
 	padding: 10px 15px;
 	border: 1px solid #333;
 	font-weight: bold;
-}
+} */
 
-.buttons a:after {
+/* .buttons a:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -91,24 +91,24 @@ p {
 	transition: width 0.3s ease-in-out;
 	transform: skew(-25deg);
 	transform-origin: right;
-}
+} */
 
-.buttons a:hover {
+/* .buttons a:hover {
 	color: #fff;
 	transition: all 0.5s ease;
-}
+} */
 
-.buttons a:hover:after {
+/* .buttons a:hover:after {
 	width: 150%;
 	left: -10px;
 	transform-origin: left;
-}
+} */
 
-.buttons a:nth-of-type(1) {
+/* .buttons a:nth-of-type(1) {
 	border-radius: 50px 0 0 50px;
 	border-right: none;
-}
+} */
 
-.buttons a:nth-of-type(2) {
+/* .buttons a:nth-of-type(2) {
 	border-radius: 0px 50px 50px 0;
-}
+} */
